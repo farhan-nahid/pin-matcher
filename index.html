@@ -4,37 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pin Generator</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <header>
+      <h1>Pin Generator App</h1>
+    </header>
+    <main class="container">
       <div class="row">
-        <div class="col-md-6">
+        <!-- generate pin section start -->
+        <section class="col-md-6">
           <div class="pin-generator half-width">
             <input
               id="pin"
               placeholder="Click Generate pin button For New Pin"
               class="form-control"
               type="text"
+              disabled
             />
             <button onclick="generatePin()" class="generate-btn">
               Generate Pin
             </button>
           </div>
-        </div>
-        <div class="col-md-6">
+        </section>
+        <!-- generate pin section end -->
+
+        <!-- verify section start  -->
+        <section class="col-md-6">
           <div class="input-section half-width">
             <input
               id="type-pin"
               class="form-control"
               type="text"
               placeholder="Enter the generated pin"
+              disabled
             />
             <div class="numbers">
               <div id="button-container" class="calc-body">
@@ -67,17 +78,25 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <!-- verify section end  -->
       </div>
-      <div class="notify-section">
+      <!-- notify section start -->
+      <section class="notify-section">
         <p id="incorrect" class="notify">
           ❌ Pin Didn't Match, Please try again
         </p>
         <p id="correct" class="notify">
-          ✅ Pin Matched... Secret door is opening for you
+          ✅ Pin Matched... Now
+          <a href="https://random-color-with-audio.netlify.app/" target="_blank"
+            >Click hare</a
+          >
+          for Enjoy😁
         </p>
-      </div>
-    </div>
+      </section>
+      <!-- notify section end -->
+    </main>
+    <!-- custom js added -->
     <script src="app.js"></script>
   </body>
 </html>

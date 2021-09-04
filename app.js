@@ -1,5 +1,4 @@
-/*
- ==========================================================================
+
 function getPin() {
   const random = Math.random() * 10000;
   const pin = (random + "").split(".")[0];
@@ -49,5 +48,4 @@ function displayMatchResult(correctStatus, incorrectStatus) {
   const incorrect = document.getElementById("incorrect");
   incorrect.style.display = incorrectStatus;
 }
- ==========================================================================
- */
+ 
