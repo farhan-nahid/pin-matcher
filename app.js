@@ -1,3 +1,4 @@
+/* 
 
 function getPin() {
   const random = Math.random() * 10000;
@@ -48,4 +49,8 @@ function displayMatchResult(correctStatus, incorrectStatus) {
   const incorrect = document.getElementById("incorrect");
   incorrect.style.display = incorrectStatus;
 }
- 
+ */
+
+// const a = 1;
+
+// console.log(a);
